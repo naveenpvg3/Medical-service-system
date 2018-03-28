@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Coming soon, Bootstrap, Bootstrap 3.0, Free Coming Soon, free coming soon, free template, coming soon template, Html template, html template, html5, Code lab, codelab, codelab coming soon template, bootstrap coming soon template">
+    <title>Doctor</title>
+   
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800'
+        rel='stylesheet' type='text/css' />
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/style.css" rel="stylesheet" type="text/css" />    
+   
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="background-color:#6f94dc">
+
+
+
+    <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Medical Services</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="logout.php">logout</a>
+                </li>
+                
+                <li><a href="about.html">About Us</a></li>
+               
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-center">
+<img src="2.jpg" alt="Avatar" style="width:105px;border-radius: 300%;"> 
+           <div id="banner">
+
+             <h1><strong>Talk to Dr.Arjun</strong> </h1>
+		 
+		<div>
+		<iframe
+    width="300"
+    height="380"
+    src="https://console.dialogflow.com/api-client/demo/embedded/d5a85b19-fdec-4dfd-8383-cb573e33e070">
+
+	
+		 
+		</iframe>
+		
+		</div>
+
+            <h5><strong></strong></h5>
+           
+           </div>
+          
+              
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="registrationform">
+            <form class="form-horizontal" action="appointment.php" method="post">
+                <fieldset>
+                    <legend>Doctor <i class="fa fa-pencil pull-right"></i></legend>
+                    <div class="form-group">
+                        <label for="name" class="col-lg-2 control-label">
+                            Patient Name</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="patient" placeholder="Name">
+                        </div>
+                    </div>
+                   <div class="form-group">
+                        <label class="col-lg-2 control-label">
+                            Choose</label>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="disease" id="cardio" value="option1" checked="">
+                                    Cardiology
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="disease" id="neuro" value="option2">
+                                    Neurology
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="textArea" class="col-lg-2 control-label">
+                            Problem Description</label>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="3" id="desc"></textarea>
+                
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">
+                            Choose</label>
+                        <div class="col-lg-10">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="appoint" value="option1" checked="">
+                                    Fix Appointment
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="optionsRadios" id="opinion" value="option2">
+                                    Second opinion
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="reset" class="btn btn-warning">
+                                Cancel</button>
+                            <input type="submit" class="btn btn-primary">
+                                Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+         </div>
+
+
+
+         </div>
+        </div>
+        
+
+</body>
+</html>
