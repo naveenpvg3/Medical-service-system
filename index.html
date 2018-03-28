@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+margin-bottom:-8%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #012;
+    color: #fff;
+    cursor: pointer;
+margin-left:8%;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: red;
+}
+#myBtn_reg {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #012;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#myBtn_reg:hover {
+    background: #ddd;
+    color: black;
+}
+</style>
+</head>
+<body>
+
+
+<video autoplay muted loop id="myVideo">
+
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+<a href='index.php'>
+<button  id="myBtn_reg"  >Patient-Register</button></a>
+
+<a href='login.php'>
+<button  id="myBtn_reg"  >Patient-Login</button></a>
+<a href='doclogin.php'>
+<button  id="myBtn_reg"  >Doctor-Login</button></a>
+<a href='admin.php'>
+<button  id="myBtn_reg"  >Admin-Login</button></a>
+
+
+
+</div>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+
